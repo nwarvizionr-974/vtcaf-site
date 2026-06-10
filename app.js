@@ -21,7 +21,7 @@ const CONFIG = {
   instagram: "VTCAF974",
   facebook: "VTCAF974",
   currency: "€",
-  googleReviewLink: "",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
+  googleReviewLink: "https://g.page/r/CbCMsidu4e3dEBM/review",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
   googleBusinessLink: ""               // ➜ Lien fiche Google "Voir les avis"
 };
 
