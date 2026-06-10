@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- =========================================================
+       SEO — Modifiable facilement (titre, description, mots-clés)
+       ========================================================= -->
+  <title>VTCAF — Chauffeur privé & VTC à La Réunion | Transfert aéroport, événements</title>
+  <meta name="description" content="VTCAF, votre chauffeur privé à La Réunion. Transferts aéroport Roland-Garros, déplacements professionnels, sorties familiales, mariages et événements. Réservation simple sur WhatsApp. Mercedes GLB jusqu'à 7 places." />
+  <meta name="keywords" content="VTC La Réunion, chauffeur privé La Réunion, transfert aéroport Réunion, chauffeur privé Saint-Pierre, transport privé, chauffeur événement, VTC mariage Réunion" />
+  <meta name="theme-color" content="#0E1A24" />
+  <link rel="canonical" href="https://vtcaf.netlify.app/" />
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="VTCAF" />
+  <meta property="og:title" content="VTCAF — Votre chauffeur privé à La Réunion" />
+  <meta property="og:description" content="Trajets privés, transferts aéroport, déplacements professionnels, sorties familiales et événements. Réservation rapide sur WhatsApp." />
+  <meta property="og:image" content="assets/images/hero-vtcaf.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon + PWA -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Polices Google (gratuites, aucune clé API) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- =========================================================
+       Schema.org — Référencement local (entreprise de transport)
+       ========================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "VTCAF",
+    "description": "Chauffeur privé / VTC à La Réunion. Transferts aéroport, événements, mariages, mise à disposition.",
+    "image": "assets/images/logo-vtcaf.jpg",
+    "telephone": "+262692594845",
+    "areaServed": { "@type": "Place", "name": "La Réunion" },
+    "slogan": "Votre chauffeur privé – Île de La Réunion",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "VTCAF",
+      "telephone": "+262692594845",
+      "address": { "@type": "PostalAddress", "addressRegion": "La Réunion", "addressCountry": "RE" },
+      "sameAs": [
+        "https://www.instagram.com/VTCAF974",
+        "https://www.facebook.com/VTCAF974"
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Lien d'évitement (accessibilité clavier) -->
+  <a href="#estimation" class="skip-link">Aller à l'estimation</a>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#accueil" class="brand" aria-label="VTCAF — accueil">
+        <img src="assets/images/logo-vtcaf.png" alt="Logo VTCAF" class="brand-logo" width="46" height="42" />
+        <span class="brand-text">
+          <strong>VTCAF</strong>
+          <small>Chauffeur privé · La Réunion</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#estimation">Estimation</a>
+        <a href="#services">Services</a>
+        <a href="#medias">Médias</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#" class="btn btn-wa header-wa" data-wa="bonjour" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.6 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 001.523 5.255l-.999 3.648 3.965-1.802zM17.99 14.7c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================= HERO ========================= -->
+    <section class="hero" id="accueil">
+      <div class="hero-media">
+        <img src="assets/images/hero-vtcaf.jpg" alt="Chauffeur VTCAF en tenue professionnelle devant un Mercedes GLB blanc à La Réunion" class="hero-img" width="1600" height="1045" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="tail" aria-hidden="true"></span>Transport premium · Île de La Réunion</p>
+        <h1 class="hero-title">Votre chauffeur privé<br />à La Réunion</h1>
+        <p class="hero-sub">Trajets privés, transferts aéroport, déplacements professionnels, sorties familiales et événements. Un service ponctuel, confortable et local.</p>
+
+        <div class="hero-cta">
+          <a href="#estimation" class="btn btn-primary">Estimer mon trajet</a>
+          <a href="#" class="btn btn-ghost" data-wa="dispo">Demander une disponibilité</a>
+        </div>
+
+        <ul class="hero-badges" aria-label="Points forts">
+          <li>Réponse rapide sur WhatsApp</li>
+          <li>Jusqu'à 7 places</li>
+          <li>Sur réservation</li>
+          <li>Service local</li>
+        </ul>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,60 C240,10 480,90 720,60 C960,30 1200,90 1440,50 L1440,90 L0,90 Z"></path></svg>
+      </div>
+    </section>
+
+    <!-- ========================= BÉNÉFICES ========================= -->
+    <section class="section benefits-section" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="sr-only">Pourquoi VTCAF</h2>
+        <ul class="benefits">
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Ponctualité</h3><p>Présent à l'heure, prêt à partir.</p>
+          </li>
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17v-4a4 4 0 014-4h8a4 4 0 014 4v4"/><path d="M6 17v2M18 17v2M7 9l1.5-3.5A2 2 0 0110.3 4h3.4a2 2 0 011.8 1.5L17 9"/></svg>
+            <h3>Confort</h3><p>Mercedes GLB spacieux et soigné.</p>
+          </li>
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <h3>Réservation simple</h3><p>Tout se règle en un message.</p>
+          </li>
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/></svg>
+            <h3>Trajets privés</h3><p>Votre course, rien que pour vous.</p>
+          </li>
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <h3>Service local</h3><p>Une connaissance fine de l'île.</p>
+          </li>
+          <li class="benefit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M15 20c0-2 .8-3.4 2.3-4.1"/></svg>
+            <h3>Famille & pro</h3><p>Groupes, enfants, déplacements pro.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================= ESTIMATEUR ========================= -->
+    <section class="section estimate-section" id="estimation" aria-labelledby="estimate-title">
+      <div class="container narrow">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Estimation indicative</p>
+        <h2 id="estimate-title" class="section-title center">Estimer mon trajet</h2>
+        <p class="section-lead center">Remplissez l'essentiel, obtenez une estimation, puis envoyez votre demande complète sur WhatsApp. VTCAF confirme ensuite la disponibilité et le tarif final.</p>
+
+        <form class="estimate-card" id="estimate-form" novalidate>
+          <!-- Bloc identité -->
+          <fieldset class="fieldset">
+            <legend>Vos coordonnées</legend>
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-nom">Nom et prénom <span class="req">*</span></label>
+                <input type="text" id="f-nom" name="nom" autocomplete="name" required />
+                <p class="err" data-err="nom"></p>
+              </div>
+              <div class="field">
+                <label for="f-tel">Téléphone <span class="req">*</span></label>
+                <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="+262 6.." required />
+                <p class="err" data-err="tel"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="opt">(facultatif)</span></label>
+                <input type="email" id="f-email" name="email" autocomplete="email" inputmode="email" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Bloc trajet -->
+          <fieldset class="fieldset">
+            <legend>Votre trajet</legend>
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-date">Date de prise en charge <span class="req">*</span></label>
+                <input type="date" id="f-date" name="date" required />
+                <p class="err" data-err="date"></p>
+              </div>
+              <div class="field">
+                <label for="f-heure">Heure de prise en charge <span class="req">*</span></label>
+                <input type="time" id="f-heure" name="heure" required />
+                <p class="err" data-err="heure"></p>
+              </div>
+              <div class="field">
+                <label for="f-dep">Adresse de départ <span class="req">*</span></label>
+                <input type="text" id="f-dep" name="depart" placeholder="N°, rue, lieu..." required />
+                <p class="err" data-err="depart"></p>
+              </div>
+              <div class="field">
+                <label for="f-depcom">Commune de départ <span class="req">*</span></label>
+                <input type="text" id="f-depcom" name="communeDepart" placeholder="Ex : Saint-Denis" required />
+                <p class="err" data-err="communeDepart"></p>
+              </div>
+              <div class="field">
+                <label for="f-arr">Adresse d'arrivée <span class="req">*</span></label>
+                <input type="text" id="f-arr" name="arrivee" placeholder="N°, rue, lieu..." required />
+                <p class="err" data-err="arrivee"></p>
+              </div>
+              <div class="field">
+                <label for="f-arrcom">Commune d'arrivée <span class="req">*</span></label>
+                <input type="text" id="f-arrcom" name="communeArrivee" placeholder="Ex : Saint-Gilles" required />
+                <p class="err" data-err="communeArrivee"></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Bloc prestation -->
+          <fieldset class="fieldset">
+            <legend>Votre demande</legend>
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-type">Type de demande <span class="req">*</span></label>
+                <select id="f-type" name="type" required>
+                  <option value="" disabled selected>Choisir…</option>
+                  <option value="jour">Course de jour</option>
+                  <option value="aeroport">Transfert aéroport Roland-Garros</option>
+                  <option value="disposition">Mise à disposition chauffeur</option>
+                  <option value="sam">Retour de soirée / SAM</option>
+                  <option value="mariage">Mariage / événement</option>
+                  <option value="autre">Autre demande / sur devis</option>
+                </select>
+                <p class="err" data-err="type"></p>
+              </div>
+
+              <div class="field">
+                <label for="f-pax">Nombre de passagers <span class="req">*</span></label>
+                <input type="number" id="f-pax" name="passagers" min="1" max="7" value="1" required />
+                <p class="err" data-err="passagers"></p>
+              </div>
+
+              <!-- Champ conditionnel : Course de jour -->
+              <div class="field cond" data-cond="jour" hidden>
+                <label for="f-km">Distance estimée (km)</label>
+                <input type="number" id="f-km" name="km" min="0" step="1" placeholder="Ex : 18" />
+                <p class="hint">Vous ne connaissez pas la distance ? Envoyez quand même votre demande, VTCAF confirmera le tarif.</p>
+              </div>
+
+              <!-- Champ conditionnel : Transfert aéroport -->
+              <div class="field cond" data-cond="aeroport" hidden>
+                <label for="f-zone">Zone (depuis / vers l'aéroport)</label>
+                <select id="f-zone" name="zone">
+                  <option value="" disabled selected>Choisir une zone…</option>
+                  <!-- Options injectées depuis app.js (TARIFFS) -->
+                </select>
+              </div>
+
+              <!-- Champ conditionnel : Mise à disposition -->
+              <div class="field cond" data-cond="disposition" hidden>
+                <label for="f-duree">Durée de mise à disposition</label>
+                <select id="f-duree" name="duree">
+                  <option value="" disabled selected>Choisir une durée…</option>
+                </select>
+              </div>
+
+              <!-- Champ conditionnel : SAM -->
+              <div class="field cond" data-cond="sam" hidden>
+                <label for="f-sam">Trajet SAM (aller-retour)</label>
+                <select id="f-sam" name="trajetSam">
+                  <option value="" disabled selected>Choisir un trajet…</option>
+                </select>
+              </div>
+
+              <!-- Champ conditionnel : Mariage -->
+              <div class="field cond" data-cond="mariage" hidden>
+                <label for="f-formule">Formule</label>
+                <select id="f-formule" name="formule">
+                  <option value="" disabled selected>Choisir une formule…</option>
+                </select>
+                <p class="hint">Décoration comprise selon la formule.</p>
+              </div>
+
+              <!-- Champ conditionnel : numéro de vol (aéroport) -->
+              <div class="field cond" data-cond="aeroport" hidden>
+                <label for="f-vol">Numéro de vol <span class="opt">(facultatif)</span></label>
+                <input type="text" id="f-vol" name="vol" placeholder="Ex : UU975" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Bloc options -->
+          <fieldset class="fieldset">
+            <legend>Détails & options</legend>
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-bag">Nombre de bagages <span class="opt">(facultatif)</span></label>
+                <input type="number" id="f-bag" name="bagages" min="0" value="0" />
+              </div>
+              <div class="field">
+                <label for="f-vol-bag">Bagage volumineux</label>
+                <select id="f-vol-bag" name="bagageVolumineux">
+                  <option value="non">Non</option>
+                  <option value="oui">Oui (+10 €)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-enfant">Enfant à bord</label>
+                <select id="f-enfant" name="enfant">
+                  <option value="non">Non</option>
+                  <option value="oui">Oui</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-siege">Siège bébé</label>
+                <select id="f-siege" name="siegeBebe">
+                  <option value="non">Non</option>
+                  <option value="oui">Oui (offert)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-nuit">Nuit, week-end ou jour férié</label>
+                <select id="f-nuit" name="nuit">
+                  <option value="non">Non</option>
+                  <option value="oui">Oui (+20 %)</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-msg">Précisions / message <span class="opt">(facultatif)</span></label>
+              <textarea id="f-msg" name="precisions" rows="3" placeholder="Informations utiles : arrêt, point de rendez-vous, demande spécifique…"></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" id="f-consent" name="consent" required />
+              <span>J'accepte que VTCAF me recontacte au sujet de ma demande. <span class="req">*</span></span>
+            </label>
+            <p class="err" data-err="consent"></p>
+          </fieldset>
+
+          <div class="estimate-actions">
+            <button type="button" class="btn btn-primary" id="btn-estimate">Calculer l'estimation</button>
+          </div>
+
+          <!-- Carte résultat (remplie par app.js) -->
+          <div class="result-card" id="result" hidden aria-live="polite">
+            <div class="result-head">
+              <span class="result-label">Estimation indicative</span>
+              <strong class="result-price" id="result-price">—</strong>
+            </div>
+            <dl class="result-detail" id="result-detail"></dl>
+            <p class="result-note">Cette estimation est indicative. Le tarif final est confirmé par VTCAF selon la disponibilité, l'horaire, le trajet exact, les conditions de circulation, les bagages et les demandes spécifiques.</p>
+            <a href="#" class="btn btn-wa btn-block" id="btn-send" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.6 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 001.523 5.255l-.999 3.648 3.965-1.802zM17.99 14.7c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+              Envoyer la demande à VTCAF
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================= SERVICES ========================= -->
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Prestations</p>
+        <h2 id="services-title" class="section-title center">Nos services</h2>
+        <p class="section-lead center">Un seul chauffeur de confiance pour tous vos déplacements à La Réunion.</p>
+
+        <div class="cards">
+          <article class="card svc"><h3>Transfert aéroport</h3><p>Roland-Garros, dans les deux sens, à l'heure de votre vol.</p></article>
+          <article class="card svc"><h3>Déplacement professionnel</h3><p>Rendez-vous et trajets d'affaires en toute discrétion.</p></article>
+          <article class="card svc"><h3>Sortie familiale</h3><p>Jusqu'à 7 places, confort pour toute la famille.</p></article>
+          <article class="card svc"><h3>Événement / soirée</h3><p>Le SAM idéal pour profiter en toute sérénité.</p></article>
+          <article class="card svc"><h3>Circuit touristique</h3><p>Découvrez l'île accompagné d'un chauffeur local.</p></article>
+          <article class="card svc"><h3>Mise à disposition</h3><p>Un chauffeur dédié à l'heure, à la demi-journée ou journée.</p></article>
+          <article class="card svc"><h3>Mariage</h3><p>Formules dédiées, véhicule soigné, décoration selon la formule.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= MÉDIAS (galerie) ========================= -->
+    <section class="section media-section" id="medias" aria-labelledby="media-title">
+      <div class="container">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>En images</p>
+        <h2 id="media-title" class="section-title center">Le service VTCAF</h2>
+        <p class="section-lead center">Véhicule premium, accueil soigné et confort à bord — un aperçu de l'expérience.</p>
+
+        <div class="gallery" id="gallery">
+          <!-- Vignettes injectées depuis app.js (MEDIA.gallery) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= VIDÉO YOUTUBE ========================= -->
+    <section class="section video-section" aria-labelledby="video-title">
+      <div class="container narrow">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Vidéo</p>
+        <h2 id="video-title" class="section-title center">Découvrez VTCAF en vidéo</h2>
+        <p class="section-lead center">Un aperçu du service, du confort et de l'expérience VTCAF à La Réunion.</p>
+        <div class="video-wrap" id="video-wrap"><!-- iframe YouTube ou fallback injecté depuis app.js --></div>
+        <div class="video-cta" id="video-cta" hidden>
+          <a href="#" class="btn btn-ghost dark" id="btn-youtube" target="_blank" rel="noopener">Voir la vidéo sur YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= AVIS ========================= -->
+    <section class="section reviews-section" id="avis" aria-labelledby="reviews-title">
+      <div class="container">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Confiance</p>
+        <h2 id="reviews-title" class="section-title center">Ils ont voyagé avec VTCAF</h2>
+        <p class="section-lead center">Les avis clients sont issus des retours Google de VTCAF.</p>
+
+        <div class="reviews" id="reviews"><!-- Avis injectés depuis app.js (REVIEWS) --></div>
+
+        <div class="reviews-actions">
+          <a href="#" class="btn btn-outline" id="btn-see-reviews" target="_blank" rel="noopener">Voir les avis Google</a>
+          <a href="#" class="btn btn-outline" id="btn-leave-review" target="_blank" rel="noopener">Laisser un avis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PAIEMENT ========================= -->
+    <section class="section payment-section" aria-labelledby="payment-title">
+      <div class="container narrow">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Paiement</p>
+        <h2 id="payment-title" class="section-title center">Un paiement simple</h2>
+        <p class="section-lead center">Le tarif final est confirmé par VTCAF après analyse de votre demande. Le paiement peut être effectué selon les modalités convenues avec le chauffeur.</p>
+        <ul class="pay-options" id="pay-options"><!-- Options injectées depuis app.js (PAYMENT_OPTIONS) --></ul>
+      </div>
+    </section>
+
+    <!-- ========================= FAQ ========================= -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Questions fréquentes</p>
+        <h2 id="faq-title" class="section-title center">FAQ</h2>
+
+        <div class="faq">
+          <details class="qa"><summary>Est-ce que le tarif affiché est définitif ?</summary><div class="qa-body"><p>Non. L'estimation est indicative. Le tarif final est confirmé par VTCAF selon la disponibilité, l'horaire, le trajet exact, les conditions de circulation, les bagages et les demandes spécifiques.</p></div></details>
+          <details class="qa"><summary>Comment confirmer ma réservation ?</summary><div class="qa-body"><p>Envoyez votre demande via WhatsApp depuis l'estimateur. VTCAF vous répond pour confirmer la disponibilité et le tarif final.</p></div></details>
+          <details class="qa"><summary>Peut-on réserver pour l'aéroport ?</summary><div class="qa-body"><p>Oui, les transferts vers et depuis l'aéroport Roland-Garros sont assurés. Pensez à indiquer votre numéro de vol.</p></div></details>
+          <details class="qa"><summary>Combien de passagers maximum ?</summary><div class="qa-body"><p>Jusqu'à 7 places à bord du Mercedes GLB, selon le volume de bagages.</p></div></details>
+          <details class="qa"><summary>Peut-on demander un siège bébé ?</summary><div class="qa-body"><p>Oui, le siège bébé est offert. Indiquez-le simplement dans votre demande.</p></div></details>
+          <details class="qa"><summary>Quels moyens de paiement sont possibles ?</summary><div class="qa-body"><p>Paiement à bord, espèces, virement, et selon les cas carte bancaire ou acompte pour les événements. Les modalités sont convenues avec le chauffeur.</p></div></details>
+          <details class="qa"><summary>Les trajets sont-ils disponibles de nuit ?</summary><div class="qa-body"><p>Oui. Un supplément de +20 % s'applique la nuit, le week-end et les jours fériés.</p></div></details>
+          <details class="qa"><summary>Comment laisser un avis ?</summary><div class="qa-body"><p>Utilisez le bouton « Laisser un avis » de la section Avis pour partager votre expérience sur Google.</p></div></details>
+          <details class="qa"><summary>Que faire si je ne connais pas la distance exacte ?</summary><div class="qa-body"><p>Aucun problème : envoyez quand même votre demande. VTCAF confirmera le tarif après étude du trajet.</p></div></details>
+          <details class="qa"><summary>Puis-je réserver pour un mariage ou un événement ?</summary><div class="qa-body"><p>Oui, des formules dédiées existent (essentielle, prestige, luxe). La décoration est comprise selon la formule.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER / CONTACT ========================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo-vtcaf.png" alt="Logo VTCAF" width="56" height="51" />
+        <p class="footer-sign">Votre chauffeur privé<br />Île de La Réunion</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="tel:+262692594845" class="footer-link">+262 692 59 48 45</a>
+        <a href="#" class="footer-link" data-wa="bonjour">WhatsApp VTCAF</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Réseaux</h3>
+        <a href="https://www.instagram.com/VTCAF974" class="footer-link" target="_blank" rel="noopener">Instagram · VTCAF974</a>
+        <a href="https://www.facebook.com/VTCAF974" class="footer-link" target="_blank" rel="noopener">Facebook · VTCAF974</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Infos</h3>
+        <p class="footer-meta">Service sur réservation</p>
+        <p class="footer-meta">Transport de personnes · La Réunion</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> VTCAF — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a href="#" class="wa-float" data-wa="bonjour" aria-label="Contacter VTCAF sur WhatsApp" rel="noopener">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.6 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 001.523 5.255l-.999 3.648 3.965-1.802zM17.99 14.7c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+  </a>
+
+  <!-- Bannière d'installation PWA (discrète, masquée par défaut) -->
+  <div class="install-banner" id="install-banner" hidden>
+    <span>Installer l'application VTCAF</span>
+    <div>
+      <button class="btn btn-mini" id="install-yes">Installer</button>
+      <button class="btn-close" id="install-no" aria-label="Fermer">×</button>
+    </div>
+  </div>
+
+  <!-- Boîte lightbox galerie -->
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer l'image">×</button>
+    <img src="" alt="" id="lightbox-img" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
