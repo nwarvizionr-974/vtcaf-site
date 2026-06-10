@@ -125,9 +125,9 @@ const SUPPLEMENTS = {
    ⚠️ Ne jamais inventer de faux avis.
    ---------------------------------------------------------------- */
 const REVIEWS = [
-  { name: "Client Google", rating: 5, text: "Avis à remplacer par un vrai avis Google.", date: "2026" },
-  { name: "Client Google", rating: 5, text: "Avis à remplacer par un vrai avis Google.", date: "2026" },
-  { name: "Client Google", rating: 5, text: "Avis à remplacer par un vrai avis Google.", date: "2026" }
+  { name: "Gabrielle Benard", rating: 5, text: "Belle expérience ! Pour une première, on s'est bien amusées. Chauffeur arrangeant sur les horaires, i casse la blague, i mett l'ambiance, i rigole, tout ça dans le respect et avec professionnalisme ! Je recommande et je dis à bientôt 🥳😁", date: "9 juin 2026" },
+  { name: "Angélique Maillot", rating: 5, text: "Service très pro, je lui ai confié ma fille pour un transport imprévu il a vraiment tout fait pour que que tout se passe bien. Je recommande.", date: "7 juin 2026" },
+  { name: "Elele", rating: 5, text: "Très réactif, car je l'ai contacté très tard pour me récupèrer dans la nuit et il a répondu présent avec professionalisme. Je recommande.", date: "5 juin 2026" }
 ];
 
 /* ----------------------------------------------------------------
