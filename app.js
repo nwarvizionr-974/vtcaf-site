@@ -31,7 +31,7 @@ const CONFIG = {
    le lien "embed" dans youtubeEmbedUrl (voir README).
    ---------------------------------------------------------------- */
 const MEDIA = {
-  youtubeVideoUrl: "",                 // ex : https://www.youtube.com/watch?v=XXXXXXXXXXX
+  youtubeVideoUrl: "https://www.youtube.com/watch?v=ZnN8FwQaSwo",                 // ex : https://www.youtube.com/watch?v=XXXXXXXXXXX
   youtubeEmbedUrl: "",                 // ex : https://www.youtube.com/embed/XXXXXXXXXXX
   heroImage: "assets/images/hero-vtcaf.jpg",
   logo: "assets/images/logo-vtcaf.png",
