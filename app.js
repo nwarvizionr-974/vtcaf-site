@@ -32,7 +32,7 @@ const CONFIG = {
    ---------------------------------------------------------------- */
 const MEDIA = {
   youtubeVideoUrl: "https://www.youtube.com/watch?v=ZnN8FwQaSwo",                 // ex : https://www.youtube.com/watch?v=XXXXXXXXXXX
-  youtubeEmbedUrl: "",                 // ex : https://www.youtube.com/embed/XXXXXXXXXXX
+  youtubeEmbedUrl: "https://www.youtube.com/embed/ZnN8FwQaSwo",                 // ex : https://www.youtube.com/embed/XXXXXXXXXXX
   heroImage: "assets/images/hero-vtcaf.jpg",
   logo: "assets/images/logo-vtcaf.png",
   gallery: [
