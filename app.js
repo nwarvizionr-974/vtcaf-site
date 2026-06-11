@@ -20,8 +20,9 @@ const CONFIG = {
   whatsappNumber: "262692594845",      // ⚠️ JAMAIS de +, espaces ou tirets
   instagram: "VTCAF974",
   facebook: "VTCAF974",
+  tiktok: "",                          // ➜ URL complète du profil TikTok (ex : https://www.tiktok.com/@vtcaf974). Vide = masqué
   currency: "€",
-  googleReviewLink: "https://g.page/r/CbCMsidu4e3dEBM/review",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
+  googleReviewLink: "",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
   googleBusinessLink: ""               // ➜ Lien fiche Google "Voir les avis"
 };
 
@@ -31,8 +32,8 @@ const CONFIG = {
    le lien "embed" dans youtubeEmbedUrl (voir README).
    ---------------------------------------------------------------- */
 const MEDIA = {
-  youtubeVideoUrl: "https://www.youtube.com/watch?v=ZnN8FwQaSwo",                 // ex : https://www.youtube.com/watch?v=XXXXXXXXXXX
-  youtubeEmbedUrl: "https://www.youtube.com/embed/ZnN8FwQaSwo",                 // ex : https://www.youtube.com/embed/XXXXXXXXXXX
+  youtubeVideoUrl: "",                 // ex : https://www.youtube.com/watch?v=XXXXXXXXXXX
+  youtubeEmbedUrl: "",                 // ex : https://www.youtube.com/embed/XXXXXXXXXXX
   heroImage: "assets/images/hero-vtcaf.jpg",
   logo: "assets/images/logo-vtcaf.png",
   gallery: [
@@ -136,12 +137,12 @@ const REVIEWS = [
 const PAYMENT_OPTIONS = {
   onboard: true,
   cash: true,
-  card: false,
+  card: true,              // carte via lien sécurisé envoyé après validation
   bankTransfer: true,
-  paymentLink: false,
+  paymentLink: true,       // ✅ option B : lien de paiement envoyé après confirmation
   depositForEvents: true,
-  stripePaymentLink: "",   // si vide → non affiché
-  paypalLink: ""           // si vide → non affiché
+  stripePaymentLink: "",   // (optionnel) lien Stripe à montant fixe, ex. acompte — si vide → non affiché
+  paypalLink: ""           // (optionnel) lien PayPal.me — si vide → non affiché
 };
 
 /* =================================================================
@@ -216,7 +217,11 @@ function initDynamicFields() {
   const typeSel = $("#f-type");
   const updateConds = () => {
     const t = typeSel.value;
-    $$(".cond").forEach((el) => { el.hidden = el.dataset.cond !== t; });
+    $$(".cond").forEach((el) => {
+      // data-cond peut contenir plusieurs types séparés par un espace (ex: "jour aeroport")
+      const conds = el.dataset.cond.split(/\s+/);
+      el.hidden = !conds.includes(t);
+    });
   };
   typeSel.addEventListener("change", updateConds);
   updateConds();
@@ -308,6 +313,14 @@ function computeEstimate(data) {
     }
   }
 
+  // Aller-retour (uniquement courses de jour et transferts aéroport ;
+  // le SAM est déjà A/R, les forfaits horaires/mariage ne sont pas concernés)
+  const arEligible = (type === "jour" || type === "aeroport");
+  if (arEligible && data.allerRetour === "oui" && out.base) {
+    out.base = { min: out.base.min * 2, max: out.base.max * 2 };
+    out.baseLabel += " — aller-retour (×2)";
+  }
+
   // Application des suppléments sur la fourchette / le tarif fixe
   const sup = applySupplements(out.base, {
     nuit: data.nuit === "oui",
@@ -331,6 +344,7 @@ function readForm() {
     type: get("type"), passagers: get("passagers"),
     km: get("km"), zone: get("zone"), duree: get("duree"),
     trajetSam: get("trajetSam"), formule: get("formule"), vol: get("vol"),
+    allerRetour: get("allerRetour"),
     bagages: get("bagages"), bagageVolumineux: get("bagageVolumineux"),
     enfant: get("enfant"), siegeBebe: get("siegeBebe"), nuit: get("nuit"),
     precisions: get("precisions"),
@@ -438,6 +452,7 @@ Date souhaitée : ${d.date}
 Heure souhaitée : ${d.heure}
 
 Type de demande : ${est.typeLabel}
+Trajet : ${d.allerRetour === "oui" ? "Aller-retour" : "Aller simple"}
 Départ : ${d.depart}
 Commune de départ : ${d.communeDepart}
 Arrivée : ${d.arrivee}
@@ -597,6 +612,15 @@ function initPayments() {
   });
 }
 
+/* ---------- Réseaux sociaux (TikTok conditionnel) ---------- */
+function initSocials() {
+  const tk = $("#link-tiktok");
+  if (tk && CONFIG.tiktok) {
+    tk.setAttribute("href", CONFIG.tiktok);
+    tk.hidden = false;
+  }
+}
+
 /* ---------- PWA : Service Worker + bannière d'installation ---------- */
 function initPWA() {
   if ("serviceWorker" in navigator) {
@@ -633,5 +657,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initVideo();
   initReviews();
   initPayments();
+  initSocials();
   initPWA();
 });

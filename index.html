@@ -297,6 +297,16 @@
                 <label for="f-vol">Numéro de vol <span class="opt">(facultatif)</span></label>
                 <input type="text" id="f-vol" name="vol" placeholder="Ex : UU975" />
               </div>
+
+              <!-- Champ conditionnel : aller simple / aller-retour (course de jour + aéroport) -->
+              <div class="field cond" data-cond="jour aeroport" hidden>
+                <label for="f-ar">Type de trajet</label>
+                <select id="f-ar" name="allerRetour">
+                  <option value="non">Aller simple</option>
+                  <option value="oui">Aller-retour (×2)</option>
+                </select>
+                <p class="hint">L'aller-retour double le tarif de base de la course.</p>
+              </div>
             </div>
           </fieldset>
 
@@ -436,8 +446,9 @@
       <div class="container narrow">
         <p class="eyebrow center"><span class="tail" aria-hidden="true"></span>Paiement</p>
         <h2 id="payment-title" class="section-title center">Un paiement simple</h2>
-        <p class="section-lead center">Le tarif final est confirmé par VTCAF après analyse de votre demande. Le paiement peut être effectué selon les modalités convenues avec le chauffeur.</p>
+        <p class="section-lead center">Le tarif final est confirmé par VTCAF après analyse de votre demande. Une fois la course validée par WhatsApp, vous pouvez régler par carte ou PayPal via un lien de paiement sécurisé envoyé par le chauffeur — ou directement à bord.</p>
         <ul class="pay-options" id="pay-options"><!-- Options injectées depuis app.js (PAYMENT_OPTIONS) --></ul>
+        <p class="section-lead center pay-note">Paiement en ligne sécurisé par Stripe &amp; PayPal · lien transmis après confirmation de votre course.</p>
       </div>
     </section>
 
@@ -481,6 +492,7 @@
         <h3>Réseaux</h3>
         <a href="https://www.instagram.com/VTCAF974" class="footer-link" target="_blank" rel="noopener">Instagram · VTCAF974</a>
         <a href="https://www.facebook.com/VTCAF974" class="footer-link" target="_blank" rel="noopener">Facebook · VTCAF974</a>
+        <a href="#" id="link-tiktok" class="footer-link" target="_blank" rel="noopener" hidden>TikTok · VTCAF974</a>
       </div>
 
       <div class="footer-col">

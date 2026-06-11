@@ -357,6 +357,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
   border-radius: 999px; padding: 11px 20px; font-weight: 600; font-size: .92rem;
 }
 .pay-options li svg { width: 17px; height: 17px; stroke: var(--teal-bright); fill: none; stroke-width: 1.8; }
+.payment-section .pay-note { font-size: .9rem; opacity: .72; margin: 26px auto 0; max-width: 540px; }
 
 /* ---------------- FAQ ---------------- */
 .faq-section { background: var(--bone); }
