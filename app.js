@@ -22,8 +22,8 @@ const CONFIG = {
   facebook: "VTCAF974",
   tiktok: "https://www.tiktok.com/@vtcaf974",                          // ➜ URL complète du profil TikTok (ex : https://www.tiktok.com/@vtcaf974). Vide = masqué
   currency: "€",
-  googleReviewLink: "",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
-  googleBusinessLink: ""               // ➜ Lien fiche Google "Voir les avis"
+  googleReviewLink: "https://g.page/r/CbCMsidu4e3dEAE/review",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
+  googleBusinessLink: "https://maps.app.goo.gl/woLjCGoaGxo2CUga7"               // ➜ Lien fiche Google "Voir les avis"
 };
 
 /* ----------------------------------------------------------------
