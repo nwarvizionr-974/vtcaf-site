@@ -20,7 +20,7 @@ const CONFIG = {
   whatsappNumber: "262692594845",      // ⚠️ JAMAIS de +, espaces ou tirets
   instagram: "VTCAF974",
   facebook: "VTCAF974",
-  tiktok: "",                          // ➜ URL complète du profil TikTok (ex : https://www.tiktok.com/@vtcaf974). Vide = masqué
+  tiktok: "https://www.tiktok.com/@vtcaf974",                          // ➜ URL complète du profil TikTok (ex : https://www.tiktok.com/@vtcaf974). Vide = masqué
   currency: "€",
   googleReviewLink: "",                // ➜ Lien "Laisser un avis" Google (ex : https://g.page/r/XXXX/review)
   googleBusinessLink: ""               // ➜ Lien fiche Google "Voir les avis"
